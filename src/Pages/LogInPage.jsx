@@ -1,10 +1,10 @@
-import Input from "../inputComponent/Input";
 import { Link } from "react-router-dom";
+import Input from "../inputComponent/Input";
 
-
-const SingUpPage = () => {
+const LogInPage = () => {
     return (
         <div className=" bg-gradient-to-r from-blue-900 to to-violet-900 min-h-screen text-white">
+
             <div>
                 <div className=" flex gap-1 items-center pt-10 pl-10">
                     <Link to={"/"} className=" text-4xl font-semibold font-sans ">MOMO</Link>
@@ -12,27 +12,19 @@ const SingUpPage = () => {
                 </div>
 
                 <div className=" pb-5 text-center text-xl font-semibold">
-                    <h1>WELCOME TO SING UP</h1>
+                    <h1>WELCOME TO LOG IN</h1>
                 </div>
-
-                <form action="" className=" pb-5">
-                    <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl">
-                        <div className="">
-                            <Input placeholder="First Name" type="name" id="FirstName" />
-                        </div>
-                        <div>
-                            <Input placeholder="Last Name" type="name" id="LaststName" />
-                        </div>
+                <form action="" className=" pb-5 pt-20">
+                    <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl pt-10">
                         <div>
                             <Input placeholder="Email Id" type="email" id="EmailId" />
                         </div>
-                        <div>
-                            <Input placeholder="Phone Number" type="number" id="PhoneNumber" />
-                        </div>
+
                         <div>
                             <Input placeholder="Password" type="Password" id="Password" />
                         </div>
-                       <Link to={'log in'}> <button className=" hover:scale-105 transition-all ease-in-out duration-300 p-2 rounded w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 font-semibold">Sing Up</button></Link>
+                        <button className=" hover:scale-105 transition-all ease-in-out duration-300 p-2 rounded w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 font-semibold">Log In</button>
+                        <div className=" pt-1"> <small className=" font-semibold opacity-80 hover:underline text-teal-400"><Link to={""}>Forgot Password ?</Link></small></div>
                     </div>
                 </form>
             </div>
@@ -40,4 +32,4 @@ const SingUpPage = () => {
     );
 }
 
-export default SingUpPage;
+export default LogInPage;
