@@ -1,7 +1,7 @@
 import Input from "../inputComponent/Input";
 import { Link } from "react-router-dom";
 
-Link
+
 const SingUpPage = () => {
     return (
         <div className=" bg-gradient-to-r from-blue-900 to to-violet-900 min-h-screen text-white">
@@ -18,26 +18,21 @@ const SingUpPage = () => {
                 <form action="" className=" pb-5">
                     <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl">
                         <div className="">
-                            <div> <label htmlFor="FirstName" className=" opacity-80 font-semibold">First Name *</label></div>
                             <Input placeholder="First Name" type="name" id="FirstName" />
                         </div>
                         <div>
-                            <div> <label htmlFor="FirstName" className=" opacity-80 font-semibold">Last Name *</label></div>
                             <Input placeholder="Last Name" type="name" id="LaststName" />
                         </div>
                         <div>
-                            <div> <label htmlFor="EmailId" className=" opacity-80 font-semibold">Email Id *</label></div>
                             <Input placeholder="Email Id" type="email" id="EmailId" />
                         </div>
                         <div>
-                            <div> <label htmlFor="PhoneNumber" className=" opacity-80 font-semibold">Phone Number *</label></div>
                             <Input placeholder="Phone Number" type="number" id="PhoneNumber" />
                         </div>
                         <div>
-                            <div> <label htmlFor="Password" className=" opacity-80 font-semibold">Password *</label></div>
                             <Input placeholder="Password" type="Password" id="Password" />
                         </div>
-                        <button className=" hover:scale-105 transition-all ease-in-out duration-300 p-2 rounded w-[150px] bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 font-semibold">Sing Up</button>
+                        <button className=" hover:scale-105 transition-all ease-in-out duration-300 p-2 rounded w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 font-semibold">Sing Up</button>
                     </div>
                 </form>
             </div>

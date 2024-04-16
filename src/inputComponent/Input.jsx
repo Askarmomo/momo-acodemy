@@ -10,3 +10,8 @@ const Input = ({ type, placeholder }) => {
 }
 
 export default Input;
+
+Input.propTypes = {
+    type: propTypes.string,
+    placeholder: propTypes.string
+}

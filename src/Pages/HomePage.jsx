@@ -33,7 +33,7 @@ const HomePage = () => {
     return (
         <div className=' bg-blue-900'>
 
-            <div className=" pt-60 pl-40  mb-10 text-white bg-[url('src/images/2151005751.jpg')]  min-h-screen">
+            <div className=" pt-60 pl-40  mb-10 text-white bg-[url('./src/images/2151005751.jpg')]  min-h-screen">
                 <h1 className=" text-4xl pb-4" data-aos="fade-up">Learn Trading From <span className=" text-teal-500 text-5xl animate-pulse">MOMO</span> Acodemy</h1>
                 <h1 className="" data-aos="zoom-out-right">Learn Trading From MOMO-Acodemy, We Are Teaching Forex And Crypto Markets <br /> And We Are 2 Year Of Expericence Profotionals</h1>
             </div>
@@ -66,23 +66,23 @@ const HomePage = () => {
                     <div className=" text-white text-center text-3xl font-semibold py-10" data-aos="fade-up"><h1>Our Course Servicess</h1></div>
                 </div>
                 <div className=" mb-10 h-96 flex gap-20 max-w-7xl text-center mx-auto bg-gradient-to-r from-blue-900 to-violet-900 border py-5 px-3  rounded-lg  " data-aos="fade-up">
-                    <img className=" object-cover" src="src/images/pexels-george-morina-4960396.jpg" alt="" />
+                    <img className=" object-cover" src="./src/images/pexels-george-morina-4960396.jpg" alt="" />
                     <div className=" space-y-5">
                         <div className=" text-white text-center font-semibold text-xl"><h1>SMC + Market Language Trading Includes</h1></div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" /> Introduction of the Market </div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />Market Structured</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />  Suply And Demand</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />Liqudity</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />Risk And Money Management</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />Psicholegy</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="src/images/check-mark_2714-fe0f.png" alt="" />Our Poin Of Viewes In Market</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" /> Introduction of the Market </div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />Market Structured</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />  Suply And Demand</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />Liqudity</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />Risk And Money Management</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />Psicholegy</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src="./src/images/check-mark_2714-fe0f.png" alt="" />Our Poin Of Viewes In Market</div>
                     </div>
                 </div>
             </div>
             <div className=" bg-blue-950 text-white">
                 <h1 className=" font-semibold text-3xl text-center py-10" data-aos="fade-up">Our Teaching Profational</h1>
                 <div className=" flex items-center gap-5 border bg-gradient-to-r from-blue-900 to-violet-900 rounded-xl mx-20 p-5" data-aos="fade-up">
-                    <div><img className=" w-52 h-52 object-cover rounded-full" src="src/images/WhatsApp Image 2024-01-28 at 18.41.53_c0709b7b.jpg" alt="" /></div>
+                    <div><img className=" w-52 h-52 object-cover rounded-full" src="./src/images/WhatsApp Image 2024-01-28 at 18.41.53_c0709b7b.jpg" alt="" /></div>
                     <div>
                         <div className=" text-2xl font-semibold pb-5 text-center"><h1>MR. Mohammed Askar</h1></div>
                         <p className=" opacity-80">Ihave More Then 2+ Year Of Experiance In Forex And Crypto Markets
