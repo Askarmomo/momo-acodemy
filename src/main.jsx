@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import HomePage from './Pages/HomePage.jsx'
 import SingUpPage from './Pages/SingUpPage.jsx'
 import LogInPage from './Pages/LogInPage.jsx'
+import PaymentPage from './Pages/PaymentPage.jsx'
+import PaymentPage2 from './Pages/PaymentPage2.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,15 @@ const router = createBrowserRouter([
   },
   {
     path: 'log in',
-    element: <LogInPage/>
+    element: <LogInPage />
+  },
+  {
+    path: 'Payment',
+    element: <PaymentPage />
+  },
+  {
+    path: 'Payment2',
+    element: <PaymentPage2/>
   }
 ])
 

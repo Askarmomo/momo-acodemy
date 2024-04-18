@@ -12,9 +12,9 @@ const LogInPage = () => {
                 </div>
 
                 <div className=" pb-5 text-center text-xl font-semibold">
-                    <h1>WELCOME TO LOG IN</h1>
+                    <h1> LOG IN HERE</h1>
                 </div>
-                <form action="" className=" pb-5 pt-20">
+                <form action="" className=" pb-5 pt-10">
                     <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl pt-10">
                         <div>
                             <Input placeholder="Email Id" type="email" id="EmailId" />

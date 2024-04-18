@@ -14,8 +14,8 @@ const NavBar = () => {
                 <a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500" href="/">About</a>
             </div>
             <div className=" flex justify-between font-semibold gap-10 items-center">
-                <div className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500"><Link to={"sing up"}>Join</Link></div>
-                <div className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out"><Link to={'log in'}>Log In</Link></div>
+                <Link to={"sing up"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
+                <Link to={'log in'} className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out">Log In</Link>
             </div>
         </div>
     );

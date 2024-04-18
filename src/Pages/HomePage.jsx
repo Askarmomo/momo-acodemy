@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -11,8 +12,8 @@ AOS.init({
     disableMutationObserver: false, // disables automatic mutations' detections (advanced)
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
-  
+
+
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 120, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
@@ -21,12 +22,13 @@ AOS.init({
     once: false, // whether animation should happen only once - while scrolling down
     mirror: false, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  
-  });
+
+});
 
 
 
 const HomePage = () => {
+
 
 
 
@@ -100,18 +102,22 @@ const HomePage = () => {
                     <div className=" border p-5 rounded-xl bg-gradient-to-r from-blue-900 to-violet-900" data-aos="zoom-out-right">
                         <div className="pl-40" data-aos="fade-up"><svg className=" text-teal-400" xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="m12 6.7l1.45 3.85L17.3 12l-3.85 1.45L12 17.3l-1.45-3.85L6.7 12l3.85-1.45zM12 1L9 9l-8 3l8 3l3 8l3-8l8-3l-8-3z"></path></svg></div>
                         <h1 className=" text-2xl font-semibold py-5" data-aos="fade-up">PLATINUM PLANE</h1>
-                        <div className=" font-semibold text-4xl flex items-center gap-3" data-aos="fade-up">Rs. 10,000 <div className=" text-lg opacity-75" >( 1 Year Service )</div></div>
+                        <div className=" font-semibold text-4xl flex items-center gap-3 text-teal-400" data-aos="fade-up">Rs. 10,000 <div className=" text-lg opacity-75" >( 1 Year Service )</div></div>
                         <div className=" font-semibold text-lg pb-5 pt-1"><s className=" text-teal-600" data-aos="fade-up">Rs. 12,000</s> 10% Off for first 100 members</div>
                         <div data-aos="fade-up"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusamus culpa, id commodi mollitia illum dolore ea aliquam. Atque quae dolor asperiores facilis ipsa nihil cupiditate laboriosam ut natus quidem cumque sit libero eos qui architecto voluptate dolorem, incidunt deleniti error? Optio quas nulla dolorem inventore tenetur nostrum omnis ullam?</h1></div>
-                        <button className="flex mt-5 gap-2 items-center text-black bg-teal-500 font-semibold p-2 rounded-lg" data-aos="fade-up">Make Payment <span><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13q-1.25 0-2.125-.875T11 10t.875-2.125T14 7t2.125.875T17 10t-.875 2.125T14 13m-7 3q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2h10q0-.825.588-1.412T21 12V8q-.825 0-1.412-.587T19 6H9q0 .825-.587 1.413T7 8v4q.825 0 1.413.588T9 14m10 6H3q-.825 0-1.412-.587T1 18V8q0-.425.288-.712T2 7t.713.288T3 8v10h16q.425 0 .713.288T20 19t-.288.713T19 20M7 14V6z"></path></svg></span></button>
+                        <Link to={'Payment'}>
+                            <button data-aos="fade-up" className="flex mt-5 gap-2 items-center text-black bg-teal-500 hover:bg-teal-600 font-semibold p-2 rounded-lg">Make Payment <span><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13q-1.25 0-2.125-.875T11 10t.875-2.125T14 7t2.125.875T17 10t-.875 2.125T14 13m-7 3q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2h10q0-.825.588-1.412T21 12V8q-.825 0-1.412-.587T19 6H9q0 .825-.587 1.413T7 8v4q.825 0 1.413.588T9 14m10 6H3q-.825 0-1.412-.587T1 18V8q0-.425.288-.712T2 7t.713.288T3 8v10h16q.425 0 .713.288T20 19t-.288.713T19 20M7 14V6z"></path></svg></span></button>
+                        </Link>
                     </div>
                     <div className=" border p-5 rounded-xl bg-gradient-to-r from-blue-900 to-violet-900" data-aos="zoom-out-left">
                         <div className="pl-40" data-aos="fade-up"><svg className=" text-yellow-500" xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24"><path fill="currentColor" d="m1 22l1.5-5h7l1.5 5zm12 0l1.5-5h7l1.5 5zm-7-7l1.5-5h7l1.5 5zm17-8.95l-3.86 1.09L18.05 11l-1.09-3.86l-3.86-1.09l3.86-1.09l1.09-3.86l1.09 3.86z"></path></svg></div>
                         <h1 className=" text-2xl font-semibold py-5" data-aos="fade-up">GOLD PLANE</h1>
-                        <div className=" font-semibold text-4xl flex gap-3 items-center " data-aos="fade-up">Rs. 40,000 <div className=" text-lg opacity-75">( Unlimited Service )</div></div>
+                        <div className=" font-semibold text-4xl flex gap-3 items-center text-teal-400" data-aos="fade-up">Rs. 40,000 <div className=" text-lg opacity-75">( Unlimited Service )</div></div>
                         <div className=" font-semibold text-lg pb-5 pt-1" data-aos="fade-up"><s className=" text-teal-600">Rs. 45,000</s> 5% Off</div>
                         <div data-aos="fade-up"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse recusandae delectus odit sapiente labore, fugit minus harum cumque at nihil eos quia quod fugiat porro illo laborum voluptate? Quas nihil id perspiciatis est odio fugiat quisquam saepe voluptatibus maxime nam vel, eveniet, deleniti ab distinctio? Sapiente tempore perferendis rem.</h1></div>
-                        <button data-aos="fade-up" className="flex mt-5 gap-2 items-center text-black bg-teal-500 font-semibold p-2 rounded-lg">Make Payment <span><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13q-1.25 0-2.125-.875T11 10t.875-2.125T14 7t2.125.875T17 10t-.875 2.125T14 13m-7 3q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2h10q0-.825.588-1.412T21 12V8q-.825 0-1.412-.587T19 6H9q0 .825-.587 1.413T7 8v4q.825 0 1.413.588T9 14m10 6H3q-.825 0-1.412-.587T1 18V8q0-.425.288-.712T2 7t.713.288T3 8v10h16q.425 0 .713.288T20 19t-.288.713T19 20M7 14V6z"></path></svg></span></button>
+                        <Link to={'Payment2'} >
+                            <button data-aos="fade-up" className="flex mt-5 gap-2 items-center text-black bg-teal-500 hover:bg-teal-600 font-semibold p-2 rounded-lg">Make Payment <span><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13q-1.25 0-2.125-.875T11 10t.875-2.125T14 7t2.125.875T17 10t-.875 2.125T14 13m-7 3q-.825 0-1.412-.587T5 14V6q0-.825.588-1.412T7 4h14q.825 0 1.413.588T23 6v8q0 .825-.587 1.413T21 16zm2-2h10q0-.825.588-1.412T21 12V8q-.825 0-1.412-.587T19 6H9q0 .825-.587 1.413T7 8v4q.825 0 1.413.588T9 14m10 6H3q-.825 0-1.412-.587T1 18V8q0-.425.288-.712T2 7t.713.288T3 8v10h16q.425 0 .713.288T20 19t-.288.713T19 20M7 14V6z"></path></svg></span></button>
+                        </Link>
                     </div>
                 </div>
             </div>
