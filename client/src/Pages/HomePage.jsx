@@ -66,7 +66,7 @@ const HomePage = () => {
                     <div className=" text-white text-center text-3xl font-semibold py-10" data-aos="fade-up"><h1>Our Course Servicess</h1></div>
                 </div>
                 <div className=" mb-10 mx-5 sm:h-96 sm:flex gap-20 sm:max-w-7xl text-center sm:mx-auto bg-gradient-to-r from-blue-900 to-violet-900 border py-5 px-3  rounded-lg  " data-aos="fade-up">
-                    <img className=" object-cover pb-5 sm:pb-0" src={" images/pexels-george-morina-4960396.jpg"} alt="" />
+                    <img className=" object-cover pb-5 sm:pb-0" src={"images/summa.jpg"} alt="" />
                     <div className=" space-y-5">
                         <div className=" text-white text-center font-semibold text-xl"><h1>SMC + Market Language Trading Includes</h1></div>
                         <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" /> Introduction of the Market </div>
