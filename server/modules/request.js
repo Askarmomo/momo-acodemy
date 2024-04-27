@@ -2,24 +2,42 @@ import mongoose, { Schema } from "mongoose";
 
 const schema = new Schema(
     {
-        name: {
+        firstName: {
             type: String,
-            required: true
+            required: true,
+            minLength: 3,
+            maxLength: 20,
         },
-        age: {
-            type: Number,
-            required: true
-        },
-        hobby: {
+        lastName: {
             type: String,
-            required: true
+            required: true,
+            minLength: 3,
+            maxLength: 20,
         },
+        email: {
+            type: String,
+            required: true,
+            minLength: 3,
+            maxLength: 20,
+        },
+        number: {
+            type: String,
+            required: true,
+            min: 9,
+            maxLength: 10,
+        },
+        password: {
+            type: String,
+            required: true,
+            minLength: 10,
+            maxLength: 20,
+        }
     }
 )
 
 const requestModule = mongoose.model('requestModule', schema)
 
- export const createUserRquest = async (data) => {
+export const createUserRquest = async (data) => {
 
     try {
         return await requestModule.create(data)

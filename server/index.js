@@ -2,10 +2,13 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 import { createUserRquest } from './modules/request.js'
+import cors from "cors"
+
 const SERVER_PORT = 2000
 const app = express()
 dotenv.config()
 app.use(express.json())
+app.use(cors())
 
 app.get('/', (req, res) => {
 
@@ -28,7 +31,7 @@ app.post('/request', async (req, res) => {
     } catch (error) {
         console.log(error);
         res.json({
-            error:true
+            error: true
         })
     }
     res.json({
