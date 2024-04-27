@@ -1,7 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
-import { createUserRquest } from './modules/request.js'
+import { createUserRquest, getAllUsers } from './modules/request.js'
 import cors from "cors"
 
 const SERVER_PORT = 2000
@@ -39,9 +39,17 @@ app.post('/request', async (req, res) => {
     })
 })
 
+app.get("/data", async (req, res) => {
+
+    const gettingDatas = await getAllUsers()
+
+    res.json(gettingDatas)
+})
+
 app.listen(SERVER_PORT, (() => {
     console.log('server port running on' + SERVER_PORT);
 }))
+
 
 if (process.env.MONGODB_URL) {
 

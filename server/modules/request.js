@@ -46,3 +46,14 @@ export const createUserRquest = async (data) => {
     }
 
 }
+
+export const getAllUsers = async () => {
+
+    try {
+        const getingData = await requestModule.find({})
+        return getingData
+    } catch (error) {
+        console.log(error);
+    }
+
+}

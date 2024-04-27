@@ -32,7 +32,7 @@ const HomePage = () => {
     return (
         <div className=' bg-blue-900 '>
 
-            <div className=" py-72 sm:pl-40 px-5 sm:px-0 mb-10 text-white bg-[url('/images/2151005751.jpg')] sm:-z-50">
+            <div className=" py-72 sm:pl-40 px-5 sm:px-0 mb-10 text-white bg-[url('/images/2151005751.jpg')] sm:-z-40">
                 <div className="text-4xl pb-4" data-aos="fade-up">Learn Trading From <span className="text-teal-500 text-5xl animate-pulse">MOMO</span> Acodemy</div>
                 <div data-aos="zoom-out-right">Learn Trading From MOMO-Acodemy, We Are Teaching Forex And Crypto Markets <br /> And We Are 2 Year Of Expericence Profotionals</div>
             </div>
