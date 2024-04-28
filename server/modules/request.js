@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
+// backend schema
 const schema = new Schema(
     {
         firstName: {
@@ -35,8 +36,11 @@ const schema = new Schema(
     }
 )
 
+//created module
 const requestModule = mongoose.model('requestModule', schema)
 
+
+// creating a user request and sent to database
 export const createUserRquest = async (data) => {
 
     try {
@@ -47,6 +51,7 @@ export const createUserRquest = async (data) => {
 
 }
 
+// getting all users from database
 export const getAllUsers = async () => {
 
     try {
@@ -56,4 +61,26 @@ export const getAllUsers = async () => {
         console.log(error);
     }
 
+}
+
+// update a user from database
+
+export const updateUser = async (id, data) => {
+
+    try {
+        return await requestModule.findOneAndUpdate({ _id: id }, data, { new: true, })
+    } catch (error) {
+        throw error
+    }
+
+}
+
+// delete a user from database
+
+export const deleteUser = async (id) => {
+    try {
+        return await requestModule.deleteOne({ _id: id })
+    } catch (error) {
+        throw error
+    }
 }
