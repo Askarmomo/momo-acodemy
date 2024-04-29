@@ -9,7 +9,7 @@ const validationSchema = z.object(
     {
         firstName: z.string().min(3).max(20),
         lastName: z.string().min(3).max(20),
-        email: z.string().min(3).max(20),
+        email: z.string().min(3).max(30),
         number: z.string().min(9).max(10),
         password: z.string().min(10).max(20)
     }

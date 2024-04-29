@@ -1,7 +1,6 @@
 ## discription
 momo-acodemy web app
 
-
 ## full stack application
 
 ## 1.frontend technology
