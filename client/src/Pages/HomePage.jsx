@@ -1,4 +1,7 @@
 import { Link } from 'react-router-dom';
+import summaImage1 from "../../images/summa.jpg"
+import check_mark2 from "../../images/check-mark_2714-fe0f.png"
+import AsakrImage3 from "../../images/WhatsApp Image 2024-01-28 at 18.41.53_c0709b7b.jpg"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -25,7 +28,7 @@ AOS.init({
 
 });
 
-
+console.log(summaImage1);
 
 const HomePage = () => {
 
@@ -66,16 +69,16 @@ const HomePage = () => {
                     <div className=" text-white text-center text-3xl font-semibold py-10" data-aos="fade-up"><h1>Our Course Servicess</h1></div>
                 </div>
                 <div className=" mb-10 mx-5 sm:h-96 sm:flex gap-20 sm:max-w-7xl text-center sm:mx-auto bg-gradient-to-r from-blue-900 to-violet-900 border py-5 px-3  rounded-lg  " data-aos="fade-up">
-                    <img className=" object-cover pb-5 sm:pb-0" src={"images/summa.jpg"} alt="" />
+                    <img className=" object-cover pb-5 sm:pb-0" src={summaImage1} alt="" />
                     <div className=" space-y-5">
                         <div className=" text-white text-center font-semibold text-xl"><h1>SMC + Market Language Trading Includes</h1></div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" /> Introduction of the Market </div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />Market Structured</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />  Suply And Demand</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />Liqudity</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />Risk And Money Management</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />Psicholegy</div>
-                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={" images/check-mark_2714-fe0f.png"} alt="" />Our Poin Of Viewes In Market</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" /> Introduction of the Market </div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />Market Structured</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />  Suply And Demand</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />Liqudity</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />Risk And Money Management</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />Psicholegy</div>
+                        <div className=" text-white flex gap-5 font-semibold" data-aos="fade-up"><img className=" w-6" src={check_mark2} alt="" />Our Poin Of Viewes In Market</div>
                     </div>
                 </div>
             </div>
@@ -83,7 +86,7 @@ const HomePage = () => {
             <div className=" bg-blue-950 text-white">
                 <h1 className=" font-semibold text-3xl text-center py-10" data-aos="fade-up">Our Teaching Profational</h1>
                 <div className=" sm:flex space-y-5 sm:space-y-0 sm:items-center sm:gap-5 border bg-gradient-to-r from-blue-900 to-violet-900 rounded-xl sm:mx-20 mx-5 p-5" data-aos="fade-up">
-                    <div><img className=" mx-auto sm:ml-0 sm:w-52 w-40 h-40 sm:h-52 object-cover rounded-full" src={" images/WhatsApp Image 2024-01-28 at 18.41.53_c0709b7b.jpg"} alt="" /></div>
+                    <div><img className=" mx-auto sm:ml-0 sm:w-52 w-40 h-40 sm:h-52 object-cover rounded-full" src={AsakrImage3} alt="" /></div>
                     <div>
                         <div className=" text-2xl font-semibold pb-5 text-center"><h1>MR. Mohammed Askar</h1></div>
                         <p className=" opacity-80">Ihave More Then 2+ Year Of Experiance In Forex And Crypto Markets
