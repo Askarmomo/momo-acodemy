@@ -18,7 +18,7 @@ AOS.init({
 
 
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
+    offset: 10, // offset (in px) from the original trigger point
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
@@ -88,7 +88,7 @@ const HomePage = () => {
                 <div className=" sm:flex space-y-5 sm:space-y-0 sm:items-center sm:gap-5 border bg-gradient-to-r from-blue-900 to-violet-900 rounded-xl sm:mx-20 mx-5 p-5" data-aos="fade-up">
                     <div><img className=" mx-auto sm:ml-0 sm:w-52 w-40 h-40 sm:h-52 object-cover rounded-full" src={AsakrImage3} alt="" /></div>
                     <div>
-                        <div className=" text-2xl font-semibold pb-5 text-center"><h1>MR. Mohammed Askar</h1></div>
+                        <div className=" text-2xl font-semibold pb-5 text-center"><h1>M . Askar</h1></div>
                         <p className=" opacity-80">Ihave More Then 2+ Year Of Experiance In Forex And Crypto Markets
                             <br /> <br /> If You Want To become A Profitable Trader You Should Chose A best Menter
                             <br /> <br /> Next Thing Is Our Mind Set is Most Importent Part In Trading Jurney

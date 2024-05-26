@@ -8,20 +8,20 @@ const PaymentPage = () => {
         <div className=" bg-gradient-to-r from-blue-900 to to-violet-900 min-h-screen text-white">
             <div>
                 <div className=" flex justify-between items-center pt-5">
-                    <div className=" flex gap-1 items-center pl-10">
+                    <div className=" flex gap-1 items-center sm:pl-10 pl-5">
                         <Link to={"/"} className=" text-4xl font-semibold font-sans ">MOMO</Link>
                         <svg className=" text-cyan-300 rounded animate-pulse" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" d="M3.5 20q-.213 0-.356-.144Q3 19.712 3 19.5t.144-.356T3.5 19h17q.213 0 .356.144T21 19.5t-.144.356T20.5 20zm202-2.77q-.415 0-.709-.29T4 16.23V13q0-.417.291-.708T4.998 12t.709.292T6 13v3.23q0 .417-.291.71q-.291.29-.707.29m4.654 0q-.416 0-.709-.29t-.293-.71V8q0-.417.29-.708T9.653 7t.709.292t.293.708v8.23q0 .417-.291.71q-.291.29-.707.29m4.673 0q-.416 0-.709-.29t-.293-.71V11q0-.417.29-.708t.708-.292t.709.292t.293.708v5.23q0 .417-.291.71q-.291.29-.707.29m4.673 0q-.415 0-.709-.29T18 16.23V5q0-.417.291-.708T18.998 4t.709.292T20 5v11.23q0 .417-.291.71q-.291.29-.707.29"></path></svg>
                     </div>
-                    <div className=" flex justify-between font-semibold gap-10 items-center pr-5">
+                    <div className=" hidden justify-between sm:flex  font-semibold gap-10 items-center pr-5">
                         <Link to={"/sing up"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
                         <Link to={'/log in'} className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out">Log In</Link>
                     </div>
                 </div>
 
-                <div className=" pb-5 text-center text-xl font-semibold">
-                    <h1>PAY HERE</h1>
+                <div className=" text-center text-xl font-semibold">
+                    <h1 className=" pt-20">PAY HERE</h1>
                 </div>
-                <form action="" className=" pb-5 pt-10">
+                <form action="" className=" pb-5 pt-10 m-5 sm:m-0">
                     <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl pt-10">
                         <div className=" font-semibold flex justify-between items-center bg-gradient-to-r p-5 rounded text-xl"><div>PLATINUM PLANE</div> <div className=" text-teal-400 text-2xl">Rs. 10,000</div></div>
                         <div className=" opacity-80 font-semibold pt-10 pb-5 ">Your Payment Detaile</div>
