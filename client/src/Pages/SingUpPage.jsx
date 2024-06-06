@@ -1,44 +1,34 @@
+import { useState } from "react";
 import Input from "../inputComponent/Input";
-import { Link } from "react-router-dom";
-import { useForm } from "react-hook-form"
-import { z } from "zod"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const validationSchema = z.object(
-    {
-        firstName: z.string().min(3).max(20),
-        lastName: z.string().min(3).max(20),
-        email: z.string().min(3).max(30),
-        number: z.string().min(9).max(10),
-        password: z.string().min(10).max(20)
-    }
-)
+
 
 const SingUpPage = () => {
-
     const navigate = useNavigate()
+    const [firstName, setFirstname] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
+    const [password, setPassword] = useState('')
 
-    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: zodResolver(validationSchema) })
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            const result = await axios.post('http://localhost:4000/register', { firstName, lastName, email, phoneNumber, password })
+            if (result.data.message === 'Your Account Created Successfully') {
 
-    const sendToServer = async (data) => {
-        const apiRequest = await fetch("http://localhost:2000/request", {
-            method: "POST",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-
-        if (apiRequest.status === 200) {
-            alert("you have successfully joined")
-            navigate("/")
-        } else {
-            alert("you did somthing wrong")
+                alert(result.data.message)
+                navigate('/logIn')
+            } else {
+                alert('Somthing Wrong')
+                location.reload('/singUp')
+            }
+        } catch (error) {
+            console.log(error.message);
         }
     }
-
     return (
         <div className=" bg-gradient-to-r from-blue-900 to to-violet-900 min-h-screen text-white ">
             <div>
@@ -53,22 +43,22 @@ const SingUpPage = () => {
                     </div>
                 </div>
 
-                <form action="" onSubmit={handleSubmit(sendToServer)} className=" pb-5">
+                <form className=" pb-5" onSubmit={handleSubmit}>
                     <div action="" className=" bg-slate-950/30 max-w-lg mx-auto p-7 space-y-2 rounded-xl">
                         <div className="">
-                            <Input error={errors.firstName} register={register("firstName")} placeholder="First Name" type="name" name="firstName" id="FirstName" />
+                            <Input onchange={(e) => setFirstname(e.target.value)} placeholder="First Name" type="name" name="firstName" id="FirstName" />
                         </div>
                         <div>
-                            <Input error={errors.lastName} register={register("lastName")} placeholder="Last Name" type="name" id="LaststName" name="lastName" />
+                            <Input onchange={(e) => setLastName(e.target.value)} placeholder="Last Name" type="name" id="LaststName" name="lastName" />
                         </div>
                         <div>
-                            <Input error={errors.email} register={register("email")} placeholder="Email Id" type="email" id="EmailId" name="email" />
+                            <Input onchange={(e) => setEmail(e.target.value)} placeholder="Email Id" type="email" id="EmailId" name="email" />
                         </div>
                         <div>
-                            <Input error={errors.number} register={register("number")} placeholder="Phone Number" type="text" id="PhoneNumber" name="number" />
+                            <Input onchange={(e) => setPhoneNumber(e.target.value)} placeholder="Phone Number" type="text" id="PhoneNumber" name="number" />
                         </div>
                         <div>
-                            <Input error={errors.password} register={register("password")} placeholder="Password" type="Password" id="Password" name="password" />
+                            <Input onchange={(e) => setPassword(e.target.value)} placeholder="Password" type="Password" id="Password" name="password" />
                         </div>
                         <button className=" hover:scale-105 transition-all ease-in-out duration-300 p-2 rounded w-full bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 font-semibold">Sing Up</button>
                     </div>

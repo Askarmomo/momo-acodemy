@@ -18,15 +18,15 @@ const NavBar = () => {
 
             <div onClick={showNav} className=" sm:hidden cursor-pointer "><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 6h14M5 12h14M5 18h14" /></svg></div>
             <div className={` ${nave ? "block" : " hidden"} absolute sm:static right-5 left-0 text-center top-[70px] w-full sm:w-96  bg-black sm:bg-transparent sm:flex sm:justify-between font-semibold sm:gap-10`}>
-                <div className=" hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500" >Home</a></div>
-                <div className=" hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500">Cource</a></div>
-                <div className=" hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500">Contect</a></div>
-                <div className=" hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500" >About</a></div>
+                <div className=" cursor-pointer hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500" >Home</a></div>
+                <div className=" cursor-pointer hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500">Cource</a></div>
+                <div className=" cursor-pointer hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500">Contect</a></div>
+                <div className=" cursor-pointer hover:bg-gray-700 sm:hover:bg-transparent p-5 " href="/"><a className=" transition-all ease-in-out duration-300 hover:scale-125 hover:text-teal-500" >About</a></div>
             </div>
 
 
             <div className=" sm:flex justify-between hidden  font-semibold gap-10 items-center">
-                <Link to={"sing up"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
+                <Link to={"singUp"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
                 <Link to={'log in'} className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out">Log In</Link>
             </div>
         </div>

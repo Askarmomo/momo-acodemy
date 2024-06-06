@@ -21,19 +21,19 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: 'sing up',
+    path: '/singUp',
     element: <SingUpPage />
   },
   {
-    path: 'log in',
+    path: '/logIn',
     element: <LogInPage />
   },
   {
-    path: 'Payment',
+    path: '/Payment',
     element: <PaymentPage />
   },
   {
-    path: 'Payment2',
+    path: '/Payment2',
     element: <PaymentPage2/>
   }
 ])
