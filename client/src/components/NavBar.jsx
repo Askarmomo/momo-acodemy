@@ -26,8 +26,8 @@ const NavBar = () => {
 
 
             <div className=" sm:flex justify-between hidden  font-semibold gap-10 items-center">
-                <Link to={"singUp"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
-                <Link to={'log in'} className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out">Log In</Link>
+                <Link to={"/singUp"} className=" rounded px-7 bg-cyan-500 cursor-pointer  py-2 transition ease-in-out hover:scale-110 duration-500">Join</Link>
+                <Link to={'/logIn'} className=" border border-cyan-500 rounded px-7 cursor-pointer py-2 hover:bg-cyan-500 duration-300 ease-in-out">Log In</Link>
             </div>
         </div>
     );

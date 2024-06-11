@@ -28,7 +28,7 @@ AOS.init({
 
 });
 
-console.log(summaImage1);
+
 
 const HomePage = () => {
 
